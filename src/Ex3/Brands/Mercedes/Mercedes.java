@@ -1,10 +1,10 @@
 package Ex3.Brands.Mercedes;
-import Ex3.Car;
+import Ex3.*;
 
 public class Mercedes extends Car {
 
-    public Mercedes(String licensePlate, String RgbColor,int horsepower) {
-        super(licensePlate,"Mercedes", RgbColor,horsepower);
+    public Mercedes(String licensePlate, String RgbColor,int horsepower, Fuels kFuel) {
+        super(licensePlate,"Mercedes", RgbColor,horsepower, kFuel);
     }
 
     @Override
@@ -15,7 +15,12 @@ public class Mercedes extends Car {
 
     @Override
     public void stop() {
-        started = false;
-        System.out.println("Stopping by pressing a button.");
+        if(speed == 0)
+        {
+            started = false;
+            System.out.println("Stopping by pressing a button.");
+        }
+        else
+            System.out.println("You can stop the car while the car is moving.");
     }
 }
