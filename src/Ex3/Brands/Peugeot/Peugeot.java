@@ -26,4 +26,24 @@ public class Peugeot extends Car {
             System.out.println("You can stop the car while the car is moving.");
 
     }
+
+    @Override
+    public void PlayMusic() {
+
+    }
+
+    @Override
+    public void StopMusic() {
+
+    }
+
+    @Override
+    public void SkipSong() {
+
+    }
+
+    @Override
+    public void BackSong() {
+
+    }
 }

@@ -1,6 +1,6 @@
 package Ex3;
 
-public abstract class Car {
+public abstract class Car implements IMusicable {
 
     protected boolean started = false;
     protected Fuels kindOfFuel;
