@@ -6,13 +6,15 @@ public abstract class Car {
     protected int horsepower;
     protected String brand;
     protected String licensePlate;
+    protected String RgbColor;
     protected int fuel;
     protected float speed;
 
-    public Car(String brand, String licensePlate, int horsepower)
+    public Car(String brand, String licensePlate, String RgbColor, int horsepower)
     {
         this.brand = brand;
         this.licensePlate = licensePlate;
+        this.RgbColor = RgbColor;
         this.horsepower = horsepower;
     }
 

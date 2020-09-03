@@ -4,8 +4,8 @@ import Ex3.Brands.Mercedes.Mercedes;
 
 public class Citan extends Mercedes {
 
-    public Citan(String licensePlate,int horsepower)
+    public Citan(String licensePlate,String RgbColor, int horsepower)
     {
-        super(licensePlate,horsepower);
+        super(licensePlate,RgbColor,horsepower);
     }
 }

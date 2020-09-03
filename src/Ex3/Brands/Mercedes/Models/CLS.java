@@ -4,8 +4,8 @@ import Ex3.Brands.Mercedes.Mercedes;
 
 public class CLS extends Mercedes {
 
-    public CLS(String licensePlate, int horsepower)
+    public CLS(String licensePlate, String RgbColor,int horsepower)
     {
-        super(licensePlate,horsepower);
+        super(licensePlate, RgbColor, horsepower);
     }
 }

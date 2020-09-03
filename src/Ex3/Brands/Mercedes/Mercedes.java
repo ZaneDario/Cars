@@ -3,8 +3,8 @@ import Ex3.Car;
 
 public class Mercedes extends Car {
 
-    public Mercedes(String licensePlate, int horsepower) {
-        super(licensePlate,"Mercedes", horsepower);
+    public Mercedes(String licensePlate, String RgbColor,int horsepower) {
+        super(licensePlate,"Mercedes", RgbColor,horsepower);
     }
 
     @Override

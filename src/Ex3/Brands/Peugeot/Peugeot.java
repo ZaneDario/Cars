@@ -3,9 +3,9 @@ import Ex3.Car;
 
 public class Peugeot extends Car {
 
-    public Peugeot(String licensePlate, int horsepower)
+    public Peugeot(String licensePlate, String RgbColor, int horsepower)
     {
-        super(licensePlate, "Peugeot", horsepower);
+        super(licensePlate, "Peugeot", RgbColor,horsepower);
     }
 
     @Override

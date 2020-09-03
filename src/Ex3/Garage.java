@@ -38,7 +38,6 @@ public class Garage {
             else {
                 System.out.println("Car extracted.");
                 cars[index] = null;
-                return;
             }
         }
         else

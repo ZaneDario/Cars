@@ -10,20 +10,20 @@ public class Main {
 
         System.out.println("--------------------");
 
-        Car peugeot = new Traveller("1111AAA",150);
+        Car peugeot = new Traveller("1111AAA","FFFFFF",150);
         peugeot.start();
         peugeot.drive();
         garage.addCar(peugeot);
 
         System.out.println("--------------------");
 
-        Car mercedesCitan = new Citan("2222BBB",405);
+        Car mercedesCitan = new Citan("2222BBB","000000",405);
         mercedesCitan.drive();
         garage.addCar(mercedesCitan);
 
         System.out.println("--------------------");
 
-        Car mercedesCLS = new CLS("3333CCC",320);
+        Car mercedesCLS = new CLS("3333CCC","252525",320);
         mercedesCLS.refuel(100);
         mercedesCLS.getFuel();
         mercedesCLS.start();
@@ -36,7 +36,7 @@ public class Main {
 
         System.out.println("--------------------");
 
-        Car hybrid = new Hybrid("4444DDD",290);
+        Car hybrid = new Hybrid("4444DDD","500050",290);
         garage.addCar(hybrid);
 
         System.out.println("--------------------");

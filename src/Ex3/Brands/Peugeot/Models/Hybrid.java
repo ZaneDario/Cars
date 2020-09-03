@@ -4,8 +4,8 @@ import Ex3.Brands.Peugeot.Peugeot;
 
 public class Hybrid extends Peugeot {
 
-    public Hybrid(String licensePlate, int horsepower)
+    public Hybrid(String licensePlate, String RgbColor,int horsepower)
     {
-        super(licensePlate,horsepower);
+        super(licensePlate,RgbColor,horsepower);
     }
 }
