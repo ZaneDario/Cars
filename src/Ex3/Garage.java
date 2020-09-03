@@ -1,5 +1,7 @@
 package Ex3;
 
+import Ex3.Vehicles.Cars.Car;
+
 public class Garage {
     private Car[] cars;
     public boolean opened = true;

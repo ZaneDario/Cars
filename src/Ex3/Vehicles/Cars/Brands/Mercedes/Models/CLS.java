@@ -1,6 +1,6 @@
-package Ex3.Brands.Mercedes.Models;
+package Ex3.Vehicles.Cars.Brands.Mercedes.Models;
 
-import Ex3.Brands.Mercedes.Mercedes;
+import Ex3.Vehicles.Cars.Brands.Mercedes.Mercedes;
 import Ex3.Fuels;
 import Ex3.IConvertible;
 

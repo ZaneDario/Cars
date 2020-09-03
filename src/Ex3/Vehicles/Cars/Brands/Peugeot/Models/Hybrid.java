@@ -1,6 +1,6 @@
-package Ex3.Brands.Peugeot.Models;
+package Ex3.Vehicles.Cars.Brands.Peugeot.Models;
 
-import Ex3.Brands.Peugeot.Peugeot;
+import Ex3.Vehicles.Cars.Brands.Peugeot.Peugeot;
 import Ex3.Fuels;
 
 public class Hybrid extends Peugeot {

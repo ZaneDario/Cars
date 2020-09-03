@@ -1,7 +1,9 @@
 package Ex3;
 
-import Ex3.Brands.Mercedes.Models.*;
-import Ex3.Brands.Peugeot.Models.*;
+import Ex3.Vehicles.Bicycles.Cycles.Bicycle;
+import Ex3.Vehicles.Cars.Car;
+import Ex3.Vehicles.Cars.Brands.Mercedes.Models.*;
+import Ex3.Vehicles.Cars.Brands.Peugeot.Models.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -47,5 +49,12 @@ public class Main {
         System.out.println("--------------------");
 
         garage.addCar(hybrid);
+
+        System.out.println("--------------------");
+
+        for (int i = 0; i < 10; i++) {
+            Car car = Tombola.randomCar();
+            System.out.println(car.getKindOfFuel());
+        }
     }
 }

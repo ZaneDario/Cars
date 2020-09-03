@@ -1,4 +1,7 @@
-package Ex3;
+package Ex3.Vehicles.Cars;
+
+import Ex3.Fuels;
+import Ex3.IMusicable;
 
 public abstract class Car implements IMusicable {
 
@@ -6,7 +9,7 @@ public abstract class Car implements IMusicable {
     protected Fuels kindOfFuel;
     protected int horsepower;
     protected String brand;
-    protected String licensePlate;
+    public String licensePlate;
     protected String RgbColor;
     protected int fuel;
     protected float speed;
@@ -20,18 +23,23 @@ public abstract class Car implements IMusicable {
         this.kindOfFuel = kFuel;
     }
 
-    protected abstract void start();
-    protected abstract void stop();
-    protected void refuel(int amount){
+    public abstract void start();
+    public abstract void stop();
+    public void refuel(int amount){
         fuel = fuel + amount > 100 ? 100 : fuel+amount;
     }
-    protected int getFuel()
+    public int getFuel()
     {
         System.out.println(fuel);
         return fuel;
     }
 
-    protected String getBrand()
+    public Fuels getKindOfFuel()
+    {
+        return kindOfFuel;
+    }
+
+    public String getBrand()
     {
         return brand;
     }
@@ -55,7 +63,7 @@ public abstract class Car implements IMusicable {
         }
     }
 
-    protected void drive(){
+    public void drive(){
         if(started)
         {
             fuel -= 12;
