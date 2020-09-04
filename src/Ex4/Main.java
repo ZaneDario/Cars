@@ -40,7 +40,6 @@ public class Main {
     public static String goldenKeyToBase64(String goldenKey)
     {
         String string = "Bearer " + goldenKey;
-        byte[] encodedBytes = Base64.getEncoder().encode(string.getBytes());
-        return encodedBytes.toString();
+        return Base64.getEncoder().encodeToString(string.getBytes());
     }
 }

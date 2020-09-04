@@ -22,8 +22,7 @@ public class SystemUser extends User implements IAuthenticable {
     @Override
     public String authenticateSuperUser() {
         String string = "Bearer " + goldenKey;
-        byte[] encodedBytes = Base64.getEncoder().encode(string.getBytes());
-        return encodedBytes.toString();
+        return Base64.getEncoder().encodeToString(string.getBytes());
     }
 
     public String getGoldenKey()

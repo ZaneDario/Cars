@@ -10,8 +10,6 @@ public class Login {
 
     public static boolean acceptSuperUser(IAuthenticable user, String goldenKey)
     {
-        System.out.println(goldenKey);
-        System.out.println(user.authenticateSuperUser());
         if(goldenKey.equals(user.authenticateSuperUser()))
             return true;
         else
