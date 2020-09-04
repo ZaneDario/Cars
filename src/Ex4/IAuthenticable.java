@@ -1,6 +1,6 @@
 package Ex4;
 
-public interface ISuperUsable {
+public interface IAuthenticable {
 
     public String authenticateSuperUser();
 }

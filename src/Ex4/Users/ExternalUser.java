@@ -5,9 +5,11 @@ import Ex4.User;
 public class ExternalUser extends User {
 
     private int companyId;
+    private String companyName;
 
-    public ExternalUser(String name, String lastName, String phoneNumber, String email) {
+    public ExternalUser(String name, String lastName, String phoneNumber, String email, String companyName) {
         super(name, lastName, phoneNumber, email);
+        this.companyName = companyName;
     }
 
     @Override
@@ -17,6 +19,6 @@ public class ExternalUser extends User {
 
     public String getCompany()
     {
-        return "Company name";
+        return companyName;
     }
 }

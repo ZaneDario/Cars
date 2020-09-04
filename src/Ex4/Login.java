@@ -1,8 +1,6 @@
 package Ex4;
 
-import Ex4.Users.Administrator;
 import Ex4.Users.ExternalUser;
-import Ex4.Users.SystemUser;
 
 public class Login {
     public static void acceptUser(User user)
@@ -10,16 +8,11 @@ public class Login {
         System.out.println(user.welcomeMessage());
     }
 
-    public static boolean acceptSuperUser(Administrator user, String goldenKey)
+    public static boolean acceptSuperUser(IAuthenticable user, String goldenKey)
     {
-        if(user.authenticateSuperUser().equals(goldenKey))
-            return true;
-        else
-            return false;
-    }
-    public static boolean acceptSuperUser(SystemUser user, String goldenKey)
-    {
-        if(user.authenticateSuperUser().equals(goldenKey))
+        System.out.println(goldenKey);
+        System.out.println(user.authenticateSuperUser());
+        if(goldenKey.equals(user.authenticateSuperUser()))
             return true;
         else
             return false;

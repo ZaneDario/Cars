@@ -1,11 +1,11 @@
 package Ex4.Users;
 
-import Ex4.ISuperUsable;
+import Ex4.IAuthenticable;
 import Ex4.User;
 
 import java.util.Base64;
 
-public class SystemUser extends User implements ISuperUsable {
+public class SystemUser extends User implements IAuthenticable {
 
     private String goldenKey;
 
