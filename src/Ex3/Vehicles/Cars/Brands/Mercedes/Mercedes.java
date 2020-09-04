@@ -25,23 +25,4 @@ public class Mercedes extends Car {
             System.out.println("You can stop the car while the car is moving.");
     }
 
-    @Override
-    public void PlayMusic() {
-        System.out.println("Playing on a car.");
-    }
-
-    @Override
-    public void StopMusic() {
-
-    }
-
-    @Override
-    public void SkipSong() {
-
-    }
-
-    @Override
-    public void BackSong() {
-
-    }
 }

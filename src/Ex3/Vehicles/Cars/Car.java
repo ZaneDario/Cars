@@ -72,4 +72,25 @@ public abstract class Car implements IMusicable {
         else
             System.out.println("Starting needed.");
     }
+
+
+    @Override
+    public void PlayMusic() {
+        System.out.println("Playing the music.");
+    }
+
+    @Override
+    public void StopMusic() {
+
+    }
+
+    @Override
+    public void SkipSong() {
+
+    }
+
+    @Override
+    public void BackSong() {
+
+    }
 }
