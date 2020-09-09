@@ -5,7 +5,7 @@ import ex6.places.Farm;
 
 public class Farmer {
 
-    Farm farm = new Farm();
+    Farm farm;
 
     public void moveAnimal(IGrazable animal)
     {

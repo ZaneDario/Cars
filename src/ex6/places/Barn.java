@@ -12,7 +12,7 @@ public class Barn {
             if(animals[i] == null)
             {
                 animals[i] = animal;
-                break;
+                return;
             }
         }
 

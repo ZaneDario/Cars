@@ -13,7 +13,10 @@ public class Enclosure {
 
     public void graze(IGrazable animal)
     {
-
+        for (Animal grazable: animals) {
+            if(grazable.equals(animal))
+                animal.graze();
+        }
     }
 
     public void countAnimals()
