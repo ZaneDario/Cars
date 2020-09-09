@@ -16,12 +16,11 @@ public class Henhouse {
 
     public void collectEggs()
     {
-        for (ISlaughterable animal : animals
-             ) {
+        for (ISlaughterable animal : animals) {
             if(animal instanceof Chicken)
             {
                 System.out.println("You picked an egg.");
-                break;
+                return;
             }
         }
 
